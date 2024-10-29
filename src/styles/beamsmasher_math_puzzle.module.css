@@ -1,0 +1,16 @@
+.table {
+    text-align: center;
+}
+.table img {
+    width: 6rem;
+    height: auto;
+    padding: 5px;
+}
+.imgSelect {
+    background-color: rgb(130, 255, 47);
+    width: 7rem;
+    height: auto;
+}
+.imgUnselect {
+
+}

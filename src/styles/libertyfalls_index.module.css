@@ -10,6 +10,7 @@
     cursor: default;
 }
 
-h3 {
-    font-size: 56px;
+.heading {
+    margin-top: -15px;
+    vertical-align: text-top;
 }

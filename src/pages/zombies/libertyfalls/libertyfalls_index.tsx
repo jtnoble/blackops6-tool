@@ -12,7 +12,7 @@ const LibertyFalls = () => {
     
     return (
       <div className={styles.container}>
-        <h1>Liberty Falls</h1>
+        <h1 className={styles.heading}>Liberty Falls</h1>
         <div className={styles.imgContainer}>
           <div>
             <h3 className={styles.addHref} onClick={() => handleRedirect('/zombies/liberty-falls/thrustodyne')}>Jet Gun (Thrustodyne)</h3>

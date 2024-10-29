@@ -9,7 +9,3 @@
 .addHref:not():hover{
     cursor: default;
 }
-
-h3 {
-    font-size: 56px;
-}
