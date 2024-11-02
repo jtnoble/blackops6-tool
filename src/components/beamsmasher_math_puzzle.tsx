@@ -104,7 +104,7 @@ const BeamsmasherMathPuzzle: React.FC = () => {
             <table className={styles.table}>
                 <tbody>{puzzleRows}</tbody>
             </table>
-            <p>Output: X = {xOutput}, Y = {yOutput}, Z = {zOutput}</p>
+            <p><b>Solution: X = {xOutput}, Y = {yOutput}, Z = {zOutput}</b></p>
         </>
     );
 };

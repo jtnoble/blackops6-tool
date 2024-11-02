@@ -31,7 +31,8 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.5em;
+  font-family: BlackOps2Font;
   line-height: 1.1;
 }
 
@@ -65,4 +66,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@font-face {
+  font-family: 'BlackOps2Font';
+  src: url('../public/Black_Ops_2_Font.ttf');
 }
