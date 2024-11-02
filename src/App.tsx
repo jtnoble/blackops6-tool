@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import IndexPage from './pages/indexPage'
@@ -9,17 +8,16 @@ import Terminus from './pages/zombies/terminus/terminus_index'
 import Beamsmasher from './pages/zombies/terminus/beamsmasher'
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(0)
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<IndexPage />} />
-        <Route path="/multiplayer" element={<Multiplayer />} />
-        <Route path="/zombies" element={<Zombies />} />
-        <Route path="/zombies/liberty-falls" element={<LibertyFalls />} />
-        <Route path="/zombies/terminus" element={<Terminus />} />
-        <Route path="/zombies/terminus/beamsmasher" element={<Beamsmasher />} />
+        <Route path="/blackops6-tool" element={<IndexPage />} />
+        <Route path="/blackops6-tool/multiplayer" element={<Multiplayer />} />
+        <Route path="/blackops6-tool/zombies" element={<Zombies />} />
+        <Route path="/blackops6-tool/zombies/liberty-falls" element={<LibertyFalls />} />
+        <Route path="/blackops6-tool/zombies/terminus" element={<Terminus />} />
+        <Route path="/blackops6-tool/zombies/terminus/beamsmasher" element={<Beamsmasher />} />
       </Routes>
     </BrowserRouter>
   )

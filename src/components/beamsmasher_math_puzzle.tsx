@@ -41,7 +41,7 @@ const PuzzleItem: React.FC<any> = ({ index, isSelected, onSelect }: any) => {
 };
 
 const PuzzleRow: React.FC<any> = ({ rowCharacter, selectedIndex, onSelect }: any) => {
-    const rowElements = data.map((item, index) => (
+    const rowElements = data.map((_, index) => (
         <PuzzleItem
             key={index}
             index={index}
@@ -64,8 +64,8 @@ const BeamsmasherMathPuzzle: React.FC = () => {
     const [zSelected, setZSelected] = useState<number | null>(null);
 
     // Helper functions to compute outputs based on selected values
-    const calculateXOutput = (x: number, y: number, z: number) => (2 * x) + 11;
-    const calculateYOutput = (x: number, y: number, z: number) => ((2 * z) + y) - 5;
+    const calculateXOutput = (x: number) => (2 * x) + 11;
+    const calculateYOutput = (y: number, z: number) => ((2 * z) + y) - 5;
     const calculateZOutput = (x: number, y: number, z: number) => Math.abs((y + z) - x);
 
     // Get the values from selected indices
@@ -74,8 +74,8 @@ const BeamsmasherMathPuzzle: React.FC = () => {
     const zInput = zSelected !== null ? data[zSelected].value : 0;
 
     // Calculate outputs based on the selected inputs
-    const xOutput = calculateXOutput(xInput, yInput, zInput);
-    const yOutput = calculateYOutput(xInput, yInput, zInput);
+    const xOutput = calculateXOutput(xInput);
+    const yOutput = calculateYOutput(yInput, zInput);
     const zOutput = calculateZOutput(xInput, yInput, zInput);
 
     const puzzleRows = [

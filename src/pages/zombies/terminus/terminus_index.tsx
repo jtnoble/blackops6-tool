@@ -1,4 +1,3 @@
-import placeholderLogo from '../../../assets/1600x200.svg'
 import { useNavigate } from 'react-router-dom'
 import styles from '../../../styles/terminus_index.module.css'
 
@@ -15,7 +14,7 @@ const Terminus = () => {
         <h1>Terminus</h1>
         <div className={styles.imgContainer}>
           <div>
-            <h3 className={styles.addHref} onClick={() => handleRedirect('/zombies/terminus/beamsmasher')}>Beamsmasher</h3>
+            <h3 className={styles.addHref} onClick={() => handleRedirect('/blackops6-tool/zombies/terminus/beamsmasher')}>Beamsmasher</h3>
           </div>
         </div>
       </div>

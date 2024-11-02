@@ -14,8 +14,8 @@ const Zombies = () => {
       <div className={styles.container}>
         <h1>Zombies</h1>
         <div className={styles.imgContainer}>
-          <img src={placeholderLogo} alt={placeholderLogo} onClick={() => handleRedirect("/zombies/liberty-falls")}/>
-          <img src={placeholderLogo} alt={placeholderLogo} onClick={() => handleRedirect("/zombies/terminus")}/>
+          <img src={placeholderLogo} alt={placeholderLogo} onClick={() => handleRedirect("/blackops6-tool/zombies/liberty-falls")}/>
+          <img src={placeholderLogo} alt={placeholderLogo} onClick={() => handleRedirect("/blackops6-tool/zombies/terminus")}/>
         </div>
       </div>
     )
