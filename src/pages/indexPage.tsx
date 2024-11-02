@@ -14,7 +14,7 @@ const IndexPage = () => {
     <div className={styles.container}>
       <h1>Black Ops 6: MultiTool</h1>
       <div className={styles.imgContainer}>
-        <img src={placeholderLogo} alt={placeholderLogo} onClick={() => handleRedirect("/multiplayer")}/>
+        {/* <img src={placeholderLogo} alt={placeholderLogo} onClick={() => handleRedirect("/multiplayer")}/> */}
         <img src={placeholderLogo} alt={placeholderLogo} onClick={() => handleRedirect("/zombies")}/>
       </div>
     </div>
