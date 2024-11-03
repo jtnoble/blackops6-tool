@@ -10,14 +10,14 @@ import Beamsmasher from './pages/zombies/terminus/beamsmasher'
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/blackops6-tool'>
       <Routes>
-        <Route path="/blackops6-tool" element={<IndexPage />} />
-        <Route path="/blackops6-tool/multiplayer" element={<Multiplayer />} />
-        <Route path="/blackops6-tool/zombies" element={<Zombies />} />
-        <Route path="/blackops6-tool/zombies/liberty-falls" element={<LibertyFalls />} />
-        <Route path="/blackops6-tool/zombies/terminus" element={<Terminus />} />
-        <Route path="/blackops6-tool/zombies/terminus/beamsmasher" element={<Beamsmasher />} />
+        <Route path="/" element={<IndexPage />} />
+        <Route path="/multiplayer" element={<Multiplayer />} />
+        <Route path="/zombies" element={<Zombies />} />
+        <Route path="/zombies/liberty-falls" element={<LibertyFalls />} />
+        <Route path="/zombies/terminus" element={<Terminus />} />
+        <Route path="/zombies/terminus/beamsmasher" element={<Beamsmasher />} />
       </Routes>
     </BrowserRouter>
   )

@@ -14,7 +14,7 @@ const LibertyFalls = () => {
         <h1 className={styles.heading}>Liberty Falls</h1>
         <div className={styles.imgContainer}>
           <div>
-            <h3 className={styles.addHref} onClick={() => handleRedirect('/blackops6-tool/zombies/liberty-falls/thrustodyne')}>Jet Gun (Thrustodyne)</h3>
+            <h3 className={styles.addHref} onClick={() => handleRedirect('/zombies/liberty-falls/thrustodyne')}>Jet Gun (Thrustodyne)</h3>
           </div>
         </div>
       </div>
