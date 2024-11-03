@@ -70,5 +70,5 @@ button:focus-visible {
 
 @font-face {
   font-family: 'BlackOps2Font';
-  src: url('../public/Black_Ops_2_Font.ttf');
+  src: url('/Black_Ops_2_Font.ttf');
 }
